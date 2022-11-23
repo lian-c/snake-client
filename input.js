@@ -22,6 +22,15 @@ const handleUserInput = function (key){ //coding the keys to input
   if (key === 'd'){
     connection.write("Move: right")
   }
+  if (key === '3'){
+    connection.write("Say: OMNOMNOM")
+  }
+  if (key === '2'){
+    connection.write("Say: meh I'm full anyways")
+  }
+  if (key === 'e'){
+    connection.write("Say: lemme rest")
+  }
   if (key === '\u0003') { //exits game with ctrl-c
     conn.write("You wanna quit??")
     process.exit();
