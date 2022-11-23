@@ -11,9 +11,12 @@ const connect = function () {
   conn.on("connect", () => {
     // code that does something when the connection is first established
     console.log("Successfully connected to game server🎉");
-    conn.write("Name: poo")
+    conn.write("Name: NaN")
+    
   });
-
+  
+  
+  
   conn.on('data', (message) => {
     console.log("Server was all like: ",message)
   })
@@ -21,3 +24,13 @@ const connect = function () {
 };
 
 module.exports = {connect};
+
+
+//within the conn.on("connect") area
+// setTimeout(() => {  moved after established 1 second
+//  conn.write("Move: up");
+// }, 1000);
+// console.log("moved up")
+// setInterval(() => { . //moves every 500 ms down
+//   conn.write("Move: down")
+// },500 )
