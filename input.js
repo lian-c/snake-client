@@ -29,10 +29,10 @@ const handleUserInput = function (key){ //coding the keys to input
     connection.write("Say: meh I'm full anyways")
   }
   if (key === 'e'){
-    connection.write("Say: lemme rest")
+    connection.write("Say: lemme rest ")
   }
   if (key === '\u0003') { //exits game with ctrl-c
-    conn.write("You wanna quit??")
+    process.stdout.write("You wanna quit??")
     process.exit();
   }
 }
