@@ -16,4 +16,4 @@ const handleUserInput = function (key){ //coding the keys to input
 }
 
 
-module.exports = {setupInput, handleUserInput}
+module.exports = {setupInput}
