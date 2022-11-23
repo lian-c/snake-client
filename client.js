@@ -10,8 +10,10 @@ const connect = function () {
   conn.setEncoding("utf8");
   conn.on("connect", () => {
     // code that does something when the connection is first established
-    console.log("connection established");
+    console.log("Successfully connected to game server🎉");
+    conn.write("Name: poo")
   });
+
   conn.on('data', (message) => {
     console.log("Server was all like: ",message)
   })
